@@ -1,0 +1,137 @@
+version: 5.1.0
+variant: cyberpunk
+logo:
+head:
+    favicon: https://imgur.com/xRJypTr
+    manifest:
+        name: 
+        short_name: 
+        start_url: 
+        theme_color: 
+        background_color: 
+        display: standalone
+        icons:
+            -
+                src: ''
+                sizes: ''
+                type: 
+    open_graph:
+        title: 
+        type: blog
+        url: 
+        image: 
+        site_name: 
+        author: 
+        description: 
+        twitter_card: 
+        twitter_id: 
+        twitter_site: 
+        google_plus: 
+        fb_admins: 
+        fb_app_id: 
+    structured_data:
+        title: 
+        description: 
+        url: 
+        author: 
+        publisher: 
+        publisher_logo: 
+        image: 
+    meta:
+        - ''
+    rss: 
+navbar:
+    menu:
+        Home: /
+        Writeups: /writeups
+        About: /aboutMe
+    links:
+        Facebook :
+            icon: fab fa-facebook-f
+            url: https://www.facebook.com/0xIRONBYTE/
+        Linkedin :
+            icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+        Download on GitHub:
+            icon: fab fa-github
+            url: https://github.com/IR0NBYTE
+
+footer:
+    links:
+        Facebook :
+            icon: fab fa-facebook-f
+            url: https://www.facebook.com/0xIRONBYTE/
+        Linkedin :
+            icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+        Download on GitHub:
+            icon: fab fa-github
+            url: https://github.com/IR0NBYTE
+
+sidebar:
+    left:
+        sticky: false
+    right:
+        sticky: false
+widgets:
+    -
+        position: left
+        type: profile
+        author: Med Ali Ouachani
+        author_title: Computers Engineering Student
+        location: Tunisia
+        avatar: https://c.tenor.com/JfOh4v28GOUAAAAi/build-a-byte.gif
+        avatar_rounded: false
+        gravatar: 
+        follow_link: https://twitter.com/Ir0nbyte
+        social_links:
+            Github:
+                 icon: fab fa-github
+                 url: https://github.com/IR0NBYTE
+            Facebook:
+                icon: fab fa-facebook-f
+                url: https://www.facebook.com/0xIRONBYTE/
+            Twitter:
+                icon: fab fa-twitter
+                url: https://twitter.com/Ir0nbyte
+            Linkedin :
+                icon: fab fa-linkedin-in
+                url: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+
+
+
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id: 
+    bing_webmaster:
+        tracking_id: 
+    busuanzi: false
+    cnzz:
+        id: 
+        web_id: 
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-left
+        policyLink: https://www.cookiesandyou.com/
+    gallery: true
+    google_analytics:
+        tracking_id: 
+    hotjar:
+        site_id: 
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    progressbar: true
+    statcounter:
+        project: 
+        security: 
+    twitter_conversion_tracking:
+        pixel_id: 
+providers:
+    cdn: jsdelivr
+    fontcdn: google
+    iconcdn: fontawesome
