@@ -1,8 +1,8 @@
 version: 5.1.0
 variant: default
-logo:
+logo: https://image.shutterstock.com/image-vector/data-search-vector-graphics-icon-260nw-1472327978.jpg
 head:
-    favicon: https://imgur.com/xRJypTr
+    favicon: https://image.shutterstock.com/image-vector/data-search-vector-graphics-icon-260nw-1472327978.jpg
     manifest:
         name: 
         short_name: 
@@ -78,9 +78,9 @@ widgets:
         position: left
         type: profile
         author: Med Ali Ouachani
-        author_title: Computers Engineering Student
+        author_title: Competetive Programmer X CTF Player
         location: Tunisia
-        avatar: https://c.tenor.com/JfOh4v28GOUAAAAi/build-a-byte.gif
+        avatar: https://media2.giphy.com/media/ILFjnDeFaEKbSJ4whJ/200w.gif?cid=82a1493b7tpxjcwjim72x2e2sg9r6nue5ip2cfey5yuiy27w&rid=200w.gif&ct=g
         avatar_rounded: false
         gravatar: 
         follow_link: https://twitter.com/Ir0nbyte
