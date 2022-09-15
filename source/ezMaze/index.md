@@ -124,7 +124,9 @@ Maze :
 {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}}
 ```
 
-Now, once we got the maze we need to search for the shoretest path from *(0,0)* to *(40, 41)* and try to track down the steps that we are making thought the way, I have just written a simple [BFS](https://en.wikipedia.org/wiki/Breadth-first_search) using C++ to solve that: 
+Now, once we got the maze we need to search for the shoretest path from *(0,0)* to *(40, 41)* and try to track down the steps that we are making thought the way, I have just written a simple [BFS](https://en.wikipedia.org/wiki/Breadth-first_search). It's a method for exploring a tree or graph. In a BFS, you first explore all the nodes one step away, then all the nodes two steps away, etc.
+
+Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore "ripple out" from the starting point. 
 
 ```c++ 
 #include <bits/stdc++.h>
@@ -145,15 +147,14 @@ Now, once we got the maze we need to search for the shoretest path from *(0,0)* 
 
 using namespace std;
 
-bool isSafe(vector<vector<int>> &mat, vector<vector<bool>> &visited, int x, int y)
-{
+bool isSafe(vector<vector<int>> &mat, vector<vector<bool>> &visited, int x, int y) {
 	return (x >= 0 && x < mat.size() && y >= 0 && y < mat[0].size()) &&
 			mat[x][y] == 0 && !visited[x][y];
 }
 
-void findShortestPath(vector<vector<int>> &mat, vector<vector<bool>> &visited,
-				int i, int j, int x, int y, int &min_dist, int dist, vector<char> res){
-	if (i == x && j == y){
+void findShortestPath(vector<vector<int>> &mat, vector<vector<bool>> &visited, int i, int j, int x, int y, int &min_dist, int dist, vector<char> res) {
+	
+    if (i == x && j == y){
 		min_dist = min(dist, min_dist);
 		for (auto u : res) {
             cout << u << " ";
@@ -161,47 +162,54 @@ void findShortestPath(vector<vector<int>> &mat, vector<vector<bool>> &visited,
 		cout << endl;
 		return;
 	}
+
 	// set (i, j) cell as visited
 	visited[i][j] = true;
 	auto p = res;
+
 	// go to the bottom cell
 	if (isSafe(mat, visited, i + 1, j)) {
         auto p = res;
         p.push_back('S');
 		findShortestPath(mat, visited, i + 1, j, x, y, min_dist, dist + 1, p);
 	}
+
 	// go to the right cell
 	if (isSafe(mat, visited, i, j + 1)) {
         auto p = res;
         p.push_back('D');
 		findShortestPath(mat, visited, i, j + 1, x, y, min_dist, dist + 1, p);
 	}
+
 	// go to the top cell
 	if (isSafe(mat, visited, i - 1, j)) {
         auto p = res;
         p.push_back('W');
 		findShortestPath(mat, visited, i - 1, j, x, y, min_dist, dist + 1, p);
 	}
+
 	// go to the left cell
 	if (isSafe(mat, visited, i, j - 1)) {
         auto p = res;
         p.push_back('A');
 		findShortestPath(mat, visited, i, j - 1, x, y, min_dist, dist + 1, p);
 	}
+
 	// backtrack: remove (i, j) from the visited matrix
 	visited[i][j] = false;
 }
 
-// Wrapper over findShortestPath() function
-int findShortestPathLength(vector<vector<int>> &mat, pair<int, int> &src,
-					pair<int, int> &dest){
+int findShortestPathLength(vector<vector<int>> &mat, pair<int, int> &src, pair<int, int> &dest) {
+
 	if (mat.size() == 1 || mat[src.first][src.second] == 1 ||
 			mat[dest.first][dest.second] == 1)
 		return -1;
 
 	int row = mat.size();
 	int col = mat[0].size();
-	// construct an `M   N` matrix to keep track of visited cells
+
+	/* Construct an M*N matrix to keep track of visited cells */ 
+
 	vector<vector<bool>> visited;
 	visited.resize(row, vector<bool>(col));
 
@@ -214,8 +222,7 @@ int findShortestPathLength(vector<vector<int>> &mat, pair<int, int> &src,
 	return -1;
 }
 
-int main()
-{
+int main() {
 	vector<vector<int>> mat =
 {{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 {0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1},
@@ -260,9 +267,12 @@ int main()
 {1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0},
 {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}};
 
-	pair<int, int> src = make_pair(1, 0);
-	pair<int, int> dest = make_pair(40, 41);
+    
+	pair<int, int> src = make_pair(1, 0); /* Starting point */ 
+	pair<int, int> dest = make_pair(40, 41); /* Ending point */ 
+
 	int dist = findShortestPathLength(mat, src, dest);
+
 	if (dist != -1)
 		cout << "Shortest Path is " << dist;
 	else
@@ -272,11 +282,13 @@ int main()
 }
 ```
 
-Result : 
+Result of searching : 
 
 ```console
 D S S S S S S S S D S S D D D W D D W D W D W D W W A W A W A W W D D S D S D D W W D D D S S S D D D D S D D D W D W D W W D D S S S S D D S S D D W D W W W W D W D D D S S D S D D W W W D D S S S S S A A S A A S A S S A S A A W W A A A S A S S S A S S S S A A W A W A W W D W W W W W W A A S S S S A S S A S A A S A S A S S A S S D S D S S A A S A S S A A S S S S A S S A A A W W A W W W D W W A W W D W D W W W D W W A A A S A A A S S S A A A S S S S D S S S S A S S S S D S D S S S S S D D W W W W W D D D D S D S S A A S S D D D D S D D D D W W W W W W A W A A W W D W W W D W D W D W D W D W D W W A W W A W W D W D D S D S S D D S D D S D S S A S A A S A S S A S A S S A S A S S S S S D D S S D D S D S D D D D D W W A W W W W A W W W A W W W D D D W W D D W W W D W W D W W D D S S D D D S S D D S S S A S A S S A S A S A S S S S S D S D S D D S D S D
 ```
+
+We strip the spaces between the steps, then we convert them into **md5** hash, we got : **689bc7711b6becd9c1d92ae3bb9e5e59**
 
 **flag = 689bc7711b6becd9c1d92ae3bb9e5e59** 
 
