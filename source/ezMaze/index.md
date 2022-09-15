@@ -124,7 +124,7 @@ Maze :
 {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}}
 ```
 
-Now, once we got the maze we need to search for the shoretest path from *(0,0)* to *(40, 41)* and try to track down the steps that we are making thought the way, I have just written a simple [BFS](https://en.wikipedia.org/wiki/Breadth-first_search). It's a method for exploring a tree or graph. In a BFS, you first explore all the nodes one step away, then all the nodes two steps away, etc.
+Now, once we got the maze we need to search for the shoretest path from *(1,0)* to *(40, 41)* and try to track down the steps that we are making thought the way, I have just written a simple [BFS](https://en.wikipedia.org/wiki/Breadth-first_search). It's a method for exploring a tree or graph. In a BFS, you first explore all the nodes one step away, then all the nodes two steps away, etc.
 
 Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore "ripple out" from the starting point. 
 
