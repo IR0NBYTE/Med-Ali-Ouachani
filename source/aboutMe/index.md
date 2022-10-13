@@ -4,13 +4,13 @@ date: 2022-09-13 18:08:49
 ---
 
 
-# BIOGRAPHIE :
-I'm Mohamed Ali Wachani known also as *IronByte* in community and among my friends. I was born in Tunisia ... etc. Anyway, let's skip to the important part. I have been a *competitive programmer* for quite some time (+5 years)... with some fairly good experience in programming especially in C/C++, Python and JAVA. I have been also a capture the flag player playing thought out my journey.
+# Biographie :
+I'm Mohamed Ali Wachani also known by my nickname *IronByte* among my friends. I was born in Tunisia. For years, i have been a *competitive programmer* (+5 years) into the field of Problem-Solving and with some fairly good experience in progamming-languages especially C/C++, Python and JAVA. I have been also a capture the flag player thought out this journey.
 
-# EDUCATION :
-I'm a Computer Science Engineering Student at the National Institute Of Science And Technology Of Tunisia **INSAT**. One more thing to mention, I hate classes so that's why I have been always skipping them.
+# Education :
+I'm a Computer Science And Networks Engineering Student at the National Institute Of Science And Technology Of Tunisia **INSAT**. I skip classes, defined as a self-learner who's digging for expertise alone.
 
-# I'M INTERESTED IN : 
+# My interests : 
 * Programming.
 * Binary Exploitation.
 * Reverse Engineering.
