@@ -526,7 +526,7 @@ print("Value with the Opt : ", reverseBits_Optimized(value))
 
 # VI - Sonara
 
-![](https://i.imgur.com/V2DqS7k.png) 
+![](https://i.imgur.com/Qoh0st5.png) 
 
 First, you need to download the [Binary.](https://github.com/IR0NBYTE/binaries/blob/main/Sonara)
 
