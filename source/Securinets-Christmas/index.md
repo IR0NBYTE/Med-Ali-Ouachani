@@ -377,7 +377,10 @@ breaker()
 ```
 **A better version**
 ```py
-
+inp = b"Ucestohcru}l2p2Y>4s15Y`64e7h?Y73Y36Ye667'{"
+secret=inp[0]^ord("S")
+for i in inp:
+    print(chr(i^secret),end="")
 ```
 **Flag = Securinets{j4v4_82u73_f02c1n9_15_50_c001!}**
 
