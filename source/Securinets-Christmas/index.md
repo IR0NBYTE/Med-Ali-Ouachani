@@ -375,7 +375,13 @@ def breaker():
             print(flagGuess)
 breaker()
 ```
-
+**A better version**
+```py
+enc_flag = [166, 202, 198, 234, 228, 210, 220, 202, 232, 230, 246, 110, 208, 102, 242, 190, 106, 104, 242, 190, 114, 96, 190, 98, 106, 190, 110, 208, 102, 190, 204, 234, 110, 234, 100, 102, 66, 250]
+enc_flag=[i//2 for i in enc_flag]
+for i in enc_flag:
+    print(chr(i),end='')
+```
 **Flag = Securinets{j4v4_82u73_f02c1n9_15_50_c001!}**
 
 # V - Simple ASM
@@ -762,10 +768,7 @@ enc_flag = [166, 202, 198, 234, 228, 210, 220, 202, 232, 230, 246, 110, 208, 102
 
 flag = []
 for rcx in range(len(enc_flag)): 
-    if (rcx % 2 == 1):
-        flag.append(enc_flag[rcx] >> 1)
-    else:
-        flag.append(enc_flag[rcx] // 2)
+    flag.append(enc_flag[rcx] >> 1)
 
 print("".join(chr(elt) for elt in flag))
 ```
