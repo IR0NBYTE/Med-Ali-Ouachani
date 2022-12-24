@@ -10,3 +10,4 @@ date: 2022-09-13 18:18:51
 * [seeCTF 2022 - 4mat](../4mat)
 * [CSAW 2022 - ezMaze](../ezMaze)
 * [CSAW 2022 - Anya](../Anya)
+* [Jingle Bell CTF 2022 - Reverse Engineering Writeups](../Securinets-Christmas)
