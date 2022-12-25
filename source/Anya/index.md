@@ -1,5 +1,5 @@
 ---
-title: CSAW 2022 - Anya 
+title: CSAW 2022 Quals - Anya 
 date: 2022-09-15 00:16:30
 ---
 

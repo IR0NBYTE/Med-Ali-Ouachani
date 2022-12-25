@@ -1,5 +1,5 @@
 ---
-title: CSAW 2022 - ezMaze
+title: CSAW 2022 Quals - ezMaze
 date: 2022-9-13 11:49:35
 tags: Programming
 ---
