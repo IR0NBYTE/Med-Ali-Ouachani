@@ -132,7 +132,7 @@ As you can see, he is iterating throught the input and xoring each value of the 
 
 just a little detail :
 ```Console
-# Ways of doing 5 MOD 3 = 1
+# Ways of doing 5 MOD 4 = 1
 # 1st Way : 5 & 3 = 1
 # 2nd way : 5 % 4 = 1
 ```
@@ -484,7 +484,7 @@ Output in base 2:
 0x1e6a2c48 = 0001 1110 0110 1010 0010 1100 0100 1000
 ```
 
-As you can see the algorithm is reversing the bits of the input, so to find out the input for **0xc848b3d5** all we have to do is apply the same algorithm by just reversing it's bits. One thing to mention is that algorithm is pretty famous used in a lot of algorithms such as FFT(Fast fourier Transformation) and it's called the *Generalized Bit Reversal*.
+As you can see the algorithm is reversing the bits of the input, so to find the input for **0xc848b3d5** all we have to do is apply the same algorithm by just reversing it's bits. One thing to mention is that algorithm is pretty famous used in a lot of algorithms such as FFT(Fast fourier Transformation) and it's called the *Generalized Bit Reversal*.
 
 **Solver :** 
 ```py
@@ -551,7 +551,7 @@ it looks like it's a Crackme chall, maybe a file check on the bin ?
 ironbyte@Med-Ali-Ouachani:~/Securinets-Chrismas-CTF-2022/Reversing/Sonara$ file Sonara
 Sonara: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, Go BuildID=CVvDxsixuIZcRmasFGLC/E529yWg17scgwebE8Lry/xCKiku9j0z8fuvR7RNTk/MlzQJ_9EXHc-RV7RoJPK, stripped
 ```
-As you can see it's an ELF 64-bit Little Endian executable that is statically linked, which means that all the libraries that the binary needs are already compiled into it, that's why it's size is bigger than the usual ones, another reason come from the fact that it's a GO binary cuz usual C/C++ binaries are much lighter than GO binaries. Another observation is the stripped keyword which means that the symboles and the functions names are stripped from the binary. Since, it's a stripped binary it's useless to run *strings*  on it !
+As you can see it's an ELF 64-bit Little Endian executable that is statically linked, which means that all the libraries that the binary needs are already compiled into it, that's why it's size is bigger than the usual ones, another reason come from the fact that it's a GO (you can know that from the "Go buildID") binary cuz usual C/C++ binaries are much lighter than GO binaries. Another thing to notice, is the stripped keyword which means that the symboles and the functions names are stripped from the binary. Since, it's a stripped binary it's useless to run *strings*  on it !
 
 Let's not waste too much time and start the static-analysis by firing Ghidra & IDA :
 
