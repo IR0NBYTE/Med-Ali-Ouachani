@@ -53,7 +53,7 @@ navbar:
             url: https://www.facebook.com/0xIRONBYTE/
         Linkedin :
             icon: fab fa-linkedin-in
-            url: www.linkedin.com/in/med-ali-ouachani
+            url: https://www.linkedin.com/in/med-ali-ouachani/
         Download on GitHub:
             icon: fab fa-github
             url: https://github.com/IR0NBYTE
@@ -65,7 +65,7 @@ footer:
             url: https://www.facebook.com/0xIRONBYTE/
         Linkedin :
             icon: fab fa-linkedin-in
-            url: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+            url: https://www.linkedin.com/in/med-ali-ouachani/
         Download on GitHub:
             icon: fab fa-github
             url: https://github.com/IR0NBYTE
@@ -85,7 +85,7 @@ widgets:
         avatar: https://media0.giphy.com/media/3ohzdOXZARMFbaqch2/200w.gif?cid=82a1493b5k3gljngyezqs6qc8ml4qf61g77uje253xfrjh3r&rid=200w.gif&ct=g
         avatar_rounded: false
         gravatar: 
-        follow_link: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+        follow_link: www.linkedin.com/in/med-ali-ouachani
         social_links:
             Github:
                  icon: fab fa-github
@@ -98,7 +98,7 @@ widgets:
                 url: https://twitter.com/Ir0nbyte
             Linkedin :
                 icon: fab fa-linkedin-in
-                url: https://www.linkedin.com/in/mohamed-ali-ouachani-00a452237/
+                url: https://www.linkedin.com/in/med-ali-ouachani/
 
 
 
