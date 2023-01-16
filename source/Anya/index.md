@@ -3,7 +3,7 @@ title: CSAW 2022 Quals - Anya
 date: 2022-09-15 00:16:30
 ---
 
-Before we start you need to download the game from here : [game](https://drive.google.com/file/d/17a4REEpyuqSuDqhA9tU1OyaEfgM7DBPC/view?usp=sharing).
+Before we start you need to download the game from here : [game](https://github.com/IR0NBYTE/binaries/blob/main/Game.rar).
 
 Let's try first to run and the game and play it a little! 
 
@@ -113,7 +113,7 @@ private IEnumerator Upload() {
 ```
 
 This function is uploading a *hashed* string to a server using **Post** methode and it waits for some result from the server, Hmmm at first I just thought if I just patch the binary and try to make the game behave without failing I might just get the flag.
-Things did not turn out like that, my teammate [Iyed Mejri](https://www.linkedin.com/in/iyed-mejri-128760200/) noticed something super guessy in the game : 
+Things did not turn out like that, I noticed something super guessy in the game : 
 
 ![](https://i.imgur.com/XmAl7oF.png)
 
@@ -153,8 +153,7 @@ private IEnumerator Upload() {
 }
 ```
 
-Here's what i got : 
-
+Here's the flag : 
 
 ![](https://i.imgur.com/tz9cHdJ.png)
 

@@ -3,7 +3,7 @@ title: CSAW 2022 Quals - ezMaze
 date: 2022-09-15 00:16:30
 ---
 
-Before we start you need to download the file from here : [File](https://drive.google.com/file/d/1t9n6TKM5sC_cukIPGsB9SgHvVDEWoXoF/view?usp=sharing).
+Before we start you need to download the file from here : [File](https://github.com/IR0NBYTE/binaries/blob/main/maze%20(1).pt).
 
 It's a Machine learning file, let's start by analysing the file in the [colab](https://colab.research.google.com/) and try to extract the maze from it. I wanna thank my teammate **Yassine Belkhadem** AKA [f1r3cr4cker5](https://www.yassinebelkhadem.ninja/blog) for helping out with the extraction process.
 

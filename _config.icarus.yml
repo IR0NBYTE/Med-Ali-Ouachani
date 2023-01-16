@@ -1,8 +1,8 @@
 version: 5.1.0
 variant: default
-logo: https://image.shutterstock.com/image-vector/data-search-vector-graphics-icon-260nw-1472327978.jpg
+logo: https://play-lh.googleusercontent.com/K4qWoJRUt2wuQb-T9onidSVJyBdPApA22z8hcgULZylHff_sD1PH5C6g5Cvx0l-jcjc
 head:
-    favicon: https://image.shutterstock.com/image-vector/data-search-vector-graphics-icon-260nw-1472327978.jpg
+    favicon: https://play-lh.googleusercontent.com/K4qWoJRUt2wuQb-T9onidSVJyBdPApA22z8hcgULZylHff_sD1PH5C6g5Cvx0l-jcjc
     manifest:
         name: 
         short_name: 
