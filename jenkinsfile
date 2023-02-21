@@ -1,0 +1,26 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Build') {
+      steps {
+        // Checkout source code from Git repository
+        checkout scm
+
+        // Build Docker image
+        sh 'docker build -t ir0nbyte/front:latest .'
+      }
+    }
+    stage('Push') {
+      steps {
+        // Login to Docker Hub
+                withCredentials([string(credentialsId: 'dockerhub-token', variable: 'DOCKERHUB_TOKEN')]) {
+            sh 'docker login -u ir0nbyte -p $DOCKERHUB_TOKEN'
+        }
+
+        // Push Docker image to Docker Hub
+        sh 'docker push ir0nbyte/front:latest'
+      }
+    }
+  }
+}
