@@ -7,7 +7,7 @@ pipeline {
         // Checkout source code from Git repository
         checkout scm
 
-        // Build Docker image
+        
         sh 'docker build -t ir0nbyte/front:latest .'
       }
     }
