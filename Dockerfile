@@ -5,7 +5,7 @@ COPY . .
 RUN npm ci
 
 RUN npm run build
-
+#AZEZAEAZE
 FROM nginx:latest
 
 COPY ./public /usr/share/nginx/html
