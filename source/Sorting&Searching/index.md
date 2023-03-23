@@ -4,6 +4,8 @@ date: 2023-03-23 12:10:16
 ---
 Before we begin tackling the problems, it's important for you to know that the process I'm using is not something that can be created quickly. It's the result of many years of hard work and dedication on my part. What sets my solutions apart from others is that I strive to explain things in simple terms and use examples and personal experiences to help you understand the problem. If you are a CodeForces player you can check my [profile](https://codeforces.com/profile/IronByte). So let's get started and enjoy the journey!
 
+![](https://i.imgur.com/540iM1C.gif)
+
 # I -  Concert Tickets
 You can find out the problem [@CSES](https://cses.fi/problemset/task/1091).
 This [problem](https://cses.fi/problemset/task/1091) involves the usage of a Data Structure called *multiset* from the Standard Template Library (STL) in *C++*.   
