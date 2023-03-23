@@ -1,19 +1,17 @@
 pipeline {
   agent any
-
+  
   stages {
     stage('Build') {
       steps {
         // Checkout source code from Git repository
-        checkout scm
-
-        
+        checkout scm        
         sh 'docker build -t ir0nbyte/front:latest .'
       }
     }
     stage('Push') {
       steps {
-        // Login to Docker Hub
+        // Login to Docker Hubezae
                 withCredentials([string(credentialsId: 'dockerhub-token', variable: 'DOCKERHUB_TOKEN')]) {
             sh 'docker login -u ir0nbyte -p $DOCKERHUB_TOKEN'
         }
