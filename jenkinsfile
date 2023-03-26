@@ -14,9 +14,22 @@ pipeline {
       steps { 
         // Checkout source code from Git repository
         checkout scm        
-        sh 'docker build -t ir0nbyte/front:latest .'
+        script {
+          def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
+        }
       }
     }
+
+    // stage('Push Docker Image') {
+    //         steps {
+    //             script {
+    //                 docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
+    //                     dockerImage.push()
+    //                 }
+    //             }
+    //         }
+    //   }
+
     // stage('Push docker image') {
     //   steps {
     //     // Login to Docker Hubezae
