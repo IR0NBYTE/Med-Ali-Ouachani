@@ -10,19 +10,19 @@ pipeline {
       }
     }
 
-    stage('Build docker image ') {
-      steps { 
+    // stage('Build docker image ') {
+    //   steps { 
 
-        script {
-          def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
-        }
-      }
-    }
+    //     script {
+    //       def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
+    //     }
+    //   }
+    // }
 
     stage('Push docker image') {
       steps {
         // Login to Docker Hub
-        withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_CRED')]) {
+        withCredentials([string(credentialsId: 'docker_hub_token', variable: 'DOCKER_CRED')]) {
             sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
         }
         // Push Docker image to Docker Hub
