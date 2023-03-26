@@ -8,6 +8,6 @@ RUN npm run build
 
 FROM nginx:latest
 
-COPY public /usr/share/nginx/html
+COPY ./public /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
