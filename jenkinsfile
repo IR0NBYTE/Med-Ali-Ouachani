@@ -10,7 +10,7 @@ pipeline {
       }
     }
 
-    stage('Build docker image1') {
+    stage('Build docker image') {
       steps { 
         // Checkout source code from Git repository
         checkout scm        
@@ -20,15 +20,15 @@ pipeline {
       }
     }
 
-    // stage('Push Docker Image') {
-    //         steps {
-    //             script {
-    //                 docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
-    //                     dockerImage.push()
-    //                 }
-    //             }
-    //         }
-    //   }
+    stage('Push Docker Image') {
+            steps {
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
+                        dockerImage.push()
+                    }
+                }
+            }
+      }
 
     // stage('Push docker image') {
     //   steps {
