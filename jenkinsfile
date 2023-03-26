@@ -14,7 +14,7 @@ pipeline {
     //   steps { 
 
     //     script {
-    //       def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
+    //       def dockerImage = docker.build("front_ironbyte:latest", "--pull -f Dockerfile .")
     //     }
     //   }
     // }
