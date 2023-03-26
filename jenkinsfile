@@ -26,7 +26,7 @@ pipeline {
             sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
         }
         // Push Docker image to Docker Hub
-        sh 'docker push front_ironbyte'
+        sh 'docker push front_ironbyte:9'
       }
     }
 
