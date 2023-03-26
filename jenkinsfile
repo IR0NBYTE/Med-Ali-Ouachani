@@ -12,10 +12,10 @@ pipeline {
 
     stage('Build docker image and push') {
       steps { 
-              
+
         script {
+          def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
           docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
-             def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
              dockerImage.push()
           }
         }
