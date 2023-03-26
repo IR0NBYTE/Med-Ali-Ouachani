@@ -10,14 +10,11 @@ pipeline {
       }
     }
 
-    // stage('Build docker image ') {
-    //   steps { 
-
-    //     script {
-    //       def dockerImage = docker.build("front_ironbyte:latest", "--pull -f Dockerfile .")
-    //     }
-    //   }
-    // }
+    stage('Build docker image ') {
+      steps { 
+        sh 'docker build -t ir0nbyte/front_ironbyte:latest .'
+      }
+    }
 
     stage('Push docker image') {
       steps {
@@ -26,7 +23,7 @@ pipeline {
             sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
         }
         // Push Docker image to Docker Hub
-        sh 'docker push front_ironbyte:9'
+        sh 'docker push ir0nbyte/front_ironbyte:latest'
       }
     }
 
