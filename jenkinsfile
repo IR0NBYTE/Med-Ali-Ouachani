@@ -10,31 +10,25 @@ pipeline {
       }
     }
 
-    stage('Build docker image and push') {
+    stage('Build docker image ') {
       steps { 
 
         script {
           def dockerImage = docker.build("front_ironbyte:${env.BUILD_NUMBER}", "--pull -f Dockerfile .")
-          docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
-             dockerImage.push()
-          }
         }
       }
     }
 
-
-
-    // stage('Push docker image') {
-    //   steps {
-    //     // Login to Docker Hubezae
-    //             withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_CRED')]) {
-    //         sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
-    //     }
-
-    //     // Push Docker image to Docker Hub
-    //     sh 'docker push ir0nbyte/front:latest'
-    //   }
-    // }
+    stage('Push docker image') {
+      steps {
+        // Login to Docker Hub
+        withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_CRED')]) {
+            sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
+        }
+        // Push Docker image to Docker Hub
+        sh 'docker push front_ironbyte'
+      }
+    }
 
   }
 }
