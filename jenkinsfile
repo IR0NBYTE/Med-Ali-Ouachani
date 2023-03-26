@@ -1,24 +1,33 @@
 pipeline {
   agent any
-  
+
   stages {
-    stage('Build') {
+
+    stage('Checkout the code from github') {
       steps {
+        checkout([$class: 'GitSCM', branches: [[name: '*/main']], 
+                  userRemoteConfigs: [[url: 'https://github.com/IR0NBYTE/Med-Ali-Ouachani']]])
+      }
+    }
+
+    stage('Build docker image') {
+      steps { 
         // Checkout source code from Git repository
         checkout scm        
         sh 'docker build -t ir0nbyte/front:latest .'
       }
     }
-    stage('Push') {
-      steps {
-        // Login to Docker Hubezae
-                withCredentials([string(credentialsId: 'dockerhub-token', variable: 'DOCKERHUB_TOKEN')]) {
-            sh 'docker login -u ir0nbyte -p $DOCKERHUB_TOKEN'
-        }
+    // stage('Push docker image') {
+    //   steps {
+    //     // Login to Docker Hubezae
+    //             withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_CRED')]) {
+    //         sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
+    //     }
 
-        // Push Docker image to Docker Hub
-        sh 'docker push ir0nbyte/front:latest'
-      }
-    }
+    //     // Push Docker image to Docker Hub
+    //     sh 'docker push ir0nbyte/front:latest'
+    //   }
+    // }
+
   }
 }
