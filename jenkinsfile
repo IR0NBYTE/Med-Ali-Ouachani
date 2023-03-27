@@ -17,7 +17,7 @@ pipeline {
         // Build for a docker-hub
         // sh 'docker build -t ir0nbyte/front_ironbyte:latest .'
         // Build for an Azure Register
-        sh 'docker build -t ironbyte.azurecr.io/front_website'
+        sh 'docker build -t ironbyte.azurecr.io/front_website .'
       }
     }
 
