@@ -2,7 +2,7 @@ pipeline {
   agent any
   // Testing for the last time
   // Testing the final time the web-hook
-
+  // Asslema
   stages {
 
     stage('Checkout the code from github') {
@@ -23,11 +23,10 @@ pipeline {
 
     stage('Push docker image to Azure') {
       steps {
-        // // Login to Docker Hub
+        // Login to Docker Hub
         // withCredentials([string(credentialsId: 'docker_hub_token', variable: 'DOCKER_CRED')]) {
         //     sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
         // }
-        // // Push Docker image to Docker Hub
         // sh 'docker push ir0nbyte/front_ironbyte:latest'
 
         // Login to Azure Register Container
