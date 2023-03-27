@@ -2,7 +2,7 @@ pipeline {
   agent any
   // Testing for the last time
   // Testing the final time the web-hook
-  
+
   stages {
 
     stage('Checkout the code from github') {
@@ -14,18 +14,28 @@ pipeline {
 
     stage('Build docker image ') {
       steps { 
-        sh 'docker build -t ir0nbyte/front_ironbyte:latest .'
+        // Build for a docker-hub
+        // sh 'docker build -t ir0nbyte/front_ironbyte:latest .'
+        // Build for an Azure Register
+        sh 'docker build -t ironbyte.azurecr.io/front_website'
       }
     }
 
-    stage('Push docker image') {
+    stage('Push docker image to Azure') {
       steps {
-        // Login to Docker Hub
-        withCredentials([string(credentialsId: 'docker_hub_token', variable: 'DOCKER_CRED')]) {
-            sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
+        // // Login to Docker Hub
+        // withCredentials([string(credentialsId: 'docker_hub_token', variable: 'DOCKER_CRED')]) {
+        //     sh 'docker login -u ir0nbyte -p $DOCKER_CRED'
+        // }
+        // // Push Docker image to Docker Hub
+        // sh 'docker push ir0nbyte/front_ironbyte:latest'
+
+        // Login to Azure Register Container
+        withCredentials([string(credentialsId: 'pass', variable: 'AZURE_CRED')]) {
+            sh 'docker login ironbyte.azurecr.io --username ironbyte --password $AZURE_CRED'
         }
-        // Push Docker image to Docker Hub
-        sh 'docker push ir0nbyte/front_ironbyte:latest'
+
+        sh 'docker push ironbyte.azurecr.io/front_website'
       }
     }
 
