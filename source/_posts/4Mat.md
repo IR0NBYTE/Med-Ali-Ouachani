@@ -2,8 +2,10 @@
 title: SEECTF 2022 - 4mat
 date: 2022-7-13 11:47:07
 tags: PWN
+categories: Exploit
+thumbnail: "https://camo.githubusercontent.com/f6235a0fcaa2152c43ac3df84dc8ee18b20b1add1472e39b253b4b33b87b650d/68747470733a2f2f706f7274737769676765722e6e65742f636d732f696d616765732f30632f38662f3463623239343035306434352d61727469636c652d3139313132352d7472656e642d6d6963726f2d6374662d626f64792d746578742e6a7067"
 ---
 
-This task comes from the SEECTF CTF, feel free to read the [writeup](../4mat) !
+This task comes from the SEECTF CTF, feel free to read the [writeup](../../../../4mat) !
 
 

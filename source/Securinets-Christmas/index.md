@@ -2,10 +2,16 @@
 title: Jingle Bell CTF - 2022 
 date: 2022-12-23 17:19:46
 ---
+<center>
+
+Jingle Bell Reverse Engineering Writeups
+
+</center>
+
+![](https://media.tenor.com/2uoTk06PaHYAAAAC/santa-merry.gif)
 
 Jingle Bell CTF purpose was to bring people in the world of cyber security and to let them enjoy the process of problem solving. There are 5 basic tasks + 1 medium task. Enjoy reading !
 
-![](https://media.tenor.com/2uoTk06PaHYAAAAC/santa-merry.gif)
 # I - Simple Check 
 
 ![](https://i.imgur.com/ua182Sd.png)

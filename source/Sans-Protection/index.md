@@ -2,7 +2,11 @@
 title: 404 CTF Sans Protection
 date: 2022-09-13 18:18:35
 ---
+<center>
 
+404 CTF Sans Protection Writeup
+
+</center>
 
 Before we start you need to download the binary from here : [Binary](https://drive.google.com/file/d/11CL4lsEt_YBYbp5uQU474CR9KLv6eYJn/view?usp=sharing).
 

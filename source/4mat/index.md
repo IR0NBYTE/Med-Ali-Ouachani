@@ -2,6 +2,11 @@
 title: 4mat
 date: 2022-09-15 02:06:13
 ---
+<center>
+
+4MAT writeup
+
+</center>
 
 Before we start you need to download the binary : [Binary](https://drive.google.com/file/d/1aEIBERR7cK4nc75delbBU06If4xhW951/view?usp=sharing).
 

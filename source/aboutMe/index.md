@@ -3,15 +3,16 @@ title:
 date: 2022-09-13 18:08:49
 ---
 
-# I - Biographie
-I'm Mohamed Ali Ouachani also known by my nickname *IronByte* among my friends. I have been doing programming since I was in high school with some fairly good experience with Algorithms, Data Structures, Linux, Networks and more. I love playing competitive programming contests and CTFs. I feel myself comfortable around everything related to softwares.
+### I - Biographie
+My name is Mohamed Ali Ouachani, and my friends call me *IronByte*. I've been programming since high school and have gained considerable experience in areas such as algorithms, data structures, Linux, and networks. I enjoy participating in competitive programming contests and CTFs, and I'm comfortable with all things software-related.
 
-# II - Education
-I'm a Computer Science And Networks Engineering Student at the National Institute Of Science And Technology Of Tunisia **INSAT**. I skip classes, defined as a self-learner who's digging for expertise alone.
+### II - Education
+I'm currently studying Computer Science and Networks Engineering at the National Institute of Science and Technology of Tunisia *INSAT*. However, I consider myself a self-learner, and I often skip classes to pursue knowledge and expertise on my own.
 
-# III - Interests 
+### III - Interests 
 * Programming.
 * Reverse Engineering.
 * Binary Exploitation.
+* Web Exploitation.
 
 

@@ -2,6 +2,11 @@
 title: CSAW 2022 Quals - Anya 
 date: 2022-09-15 00:16:30
 ---
+<center>
+
+Anya Writeup
+
+</center>
 
 Before we start you need to download the game from here : [game](https://github.com/IR0NBYTE/binaries/blob/main/Game.rar).
 

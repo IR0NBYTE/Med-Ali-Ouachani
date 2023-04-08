@@ -2,6 +2,11 @@
 title: CSAW 2022 Quals - ezMaze 
 date: 2022-09-15 00:16:30
 ---
+<center>
+
+EzMaze Writeup
+
+</center>
 
 Before we start you need to download the file from here : [File](https://github.com/IR0NBYTE/binaries/blob/main/maze%20(1).pt).
 
