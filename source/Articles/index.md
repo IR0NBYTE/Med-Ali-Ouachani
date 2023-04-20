@@ -3,7 +3,7 @@ title:
 date: 2022-10-13 12:20:33
 ---
 
-![](https://64.media.tumblr.com/ba8c705edd2bed0a28d9458811155d69/tumblr_pap19zg4ae1w3zg6go1_500.gif)
+![](https://24.media.tumblr.com/39d4ce68a881ce60043533df4252277a/tumblr_mi88dbXIpt1s0qwlko1_r1_400.gif)
 **Reverse ~ Engineering** 
 
 * [Reverse Engineering ~ Chapter 1: Fundamental Skills](https://github.com/IR0NBYTE/binaries/blob/main/Reverse%20Engineering/Reverse_Engineering-Fund.pdf)
