@@ -1,3 +1,3 @@
-# **This my Blog where i share my knowledge**
+# **Welcome to my insightful blog, where I enthusiastically share my wealth of knowledge.**
 
  
