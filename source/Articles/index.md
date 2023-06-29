@@ -16,7 +16,8 @@ date: 2022-10-13 12:20:33
 * [Reverse Engineering Android ~ Chapter 2: Unlocking Android Mysteries](../Android-REV-2/)
 * [Reverse Engineering Android ~ Chapter 3: Smashing The APK](../Android-REV-3/)
 * [Reverse Engineering Android ~ Chapter 4: Fortress Of The Unbreakable](../Android-Rev-4/)
-<!-- * [Reverser Arm](../ARM-REV/) -->
+* [Reverse Engineering Android ~ Chapter 5: ARM's Intricacies ~ Full Experience](../ARM-REV/)
+
 ## Competitive ~ Programming
 
 * [Sorting And Searching ~ Classic Problems](../Sorting%26Searching/)
