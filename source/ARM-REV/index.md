@@ -222,11 +222,6 @@ Another Great example from the **Practical Reverse Engineering Book**, I just ca
 A picture can illustrate the code : 
 ![](https://i.imgur.com/KcgPHTg.png)
 
-In Line 1 of the code, we encounter the instruction PUSH.W {R4-R11,LR}. Here, the PUSH instruction is used to save a range of registers, namely R4 to R11, along with the Link Register (LR), which holds the return address of the function.
-
-Subsequently, in Line 3, we have the instruction POP.W {R4-R11,PC}. This POP instruction is responsible for restoring the previously saved registers, R4 to R11, and the Program Counter (PC), which determines the next instruction to be executed. By restoring these registers, the function can resume its operation seamlessly.
-
-Interestingly, some disassemblers utilize this specific pattern of PUSH and POP instructions as a heuristic to identify the boundaries of functions. It serves as a reliable indication for disassemblers to distinguish the start and end points of individual functions within the code.
 
 ### VI - Functions and Function Call
 Unlike its intel x86/x64 counterpart, which primarily relies on a single instruction for both function invocation (CALL) and branching (JMP), ARM architecture offers a variety of instructions depending on how the destination is encoded. Let's dive into the exciting world of ARM function invocation!
@@ -262,7 +257,7 @@ Here's an example of a function invocation and returning :
 ```
 line 1 invokes the function "foo" using BL. Before transferring control to the destination, BL stores the return address (0x00014354) in the link register (LR). The "foo" function performs some operations and returns to the caller using BX LR, which branches back to the address stored in LR.
 
-* **BLX**: is the Branch with Link and Exchange instruction in ARM. It combines the functionalities of BL and BX, providing the option to switch states. The major difference is that BLX can take either a register or an offset as its branch destination. When BLX uses an offset, the processor always swaps the state (ARM to Thumb or vice versa). BLX is often considered the equivalent of the CALL instruction in x86. In practice, both BL and BLX are used for function calls. BL is typically used when the function is within a 32MB range, while BLX is used when the target range is undetermined, such as with a function pointer. In Thumb state, BLX is commonly used to call library routines, while in ARM state, BL is preferred.
+* **BLX**: is the Branch with Link and Exchange instruction in ARM. It combines the functionalities of BL and BX, providing the option to switch states. The major difference is that BLX can take either a register or an offset as its branch destination. When BLX uses an offset, the processor always swaps the state (ARM to Thumb or vice versa). BLX is often considered the equivalent of the CALL instruction in x86. In practice, both BL and BLX are used for function calls. BL is typically used when the function is within a 32bit range, while BLX is used when the target range is undetermined, such as with a function pointer. In Thumb state, BLX is commonly used to call library routines, while in ARM state, BL is preferred.
 
 ### VII - Arithmetic Operations
 This part is quite interesting, okay I will try to simplify stuff. Imagine you have a memory full of treasures, and you want to bring them into your magical registers to perform amazing operations. The MOV instruction is like a teleportation spell that allows you to move a treasure from one register to another. You can choose a constant treasure, a treasure from another register, or even a treasure that has been transformed by a mysterious barrel shifter.
