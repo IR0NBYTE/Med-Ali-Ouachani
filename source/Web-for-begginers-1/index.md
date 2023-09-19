@@ -8,7 +8,7 @@ date: 2023-09-19 15:26:41
 </center>
 
 
-![](https://media.tenor.com/0bXnlQfC5PUAAAAC/goblin-slayer-power.gif)
+![](https://media3.giphy.com/media/y6aDJi4UcT2ow/giphy.gif?cid=6c09b952xrsb23978a5uriwh3crxwrnnfzmq009xpcetto7k&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 Time to finally start learning a little abotu web, let's start the journey togthere. 
 
