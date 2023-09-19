@@ -15,7 +15,7 @@ If you have skipped previous sections, it is assumed that you have a basic under
 ### I - Motivation
 Hey there! If you're interested in advanced Android topics, I wanted to share with you some exciting stuff about the native code. If you're already familiar with the basics of reverse engineering and have some knowledge about Android architecture, then you're in the right place. If not, don't worry - take your time to review the previous chapters, and then come back here for some truly fascinating insights.
 
-### Native Code
+### II - Native Code
 Do you remember our previous discussions on the topic of native code and dynamic code loading? I believe it's time to dive deeper into this advanced topic, and to that end, I've decided to dedicate a whole chapter to it. By the way, do you recall the picture I showed you on this topic?
 
 ![](https://i.imgur.com/7C8J5kZ.png)
