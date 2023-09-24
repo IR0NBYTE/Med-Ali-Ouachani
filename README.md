@@ -10,8 +10,8 @@ At IronByte Blog, I cover a wide range of topics, including:
 * Programming.
 * A Journey.
 
-### Our Mission
-Our mission is simple yet profound: to empower you with knowledge. We believe that knowledge is a powerful tool that can transform lives, spark creativity, and drive positive change. Through our articles, we aim to inform, inspire, and ignite your curiosity.
+### My Mission
+My mission is simple yet profound: to empower you with knowledge. I believe that knowledge is a powerful tool that can transform lives, spark creativity, and drive positive change. Through My articles, I aim to inform, inspire, and ignite your curiosity.
 
 
 
