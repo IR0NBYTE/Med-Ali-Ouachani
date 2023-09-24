@@ -6,7 +6,7 @@ Welcome to IronByte blog, your gateway to a world of insights, ideas, and inform
 At IronByte Blog, I cover a wide range of topics, including:
 
 * Reverse Engineering.
-* Binary Exploitationn.
+* Binary Exploitation.
 * Web Exploitation.
 * Programming.
 * A Journey.
