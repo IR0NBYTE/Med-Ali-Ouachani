@@ -2,7 +2,7 @@
 title: 
 date: 2022-09-13 18:08:49
 ---
-![](https://drive.google.com/file/d/1-9UInw6hV-8RJuzVelClprsQSiSbLGvz/view?usp=sharing)
+![](https://i.imgur.com/fGu1t6E.jpg)
 
 
 ### I - Biographie
