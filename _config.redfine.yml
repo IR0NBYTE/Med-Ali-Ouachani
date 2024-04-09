@@ -99,7 +99,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Exploring the Intersection of Computing and Security
+  title: Exploring the Intersection of Computing and Security -- 
   # Home banner subtitle
   subtitle:
     text: [Venturing Uncharted Realms.] # subtitle text, array
@@ -171,7 +171,7 @@ navbar:
       icon: fa-regular fa-user
       submenus:
         Who am I?: /../../../../aboutMe
-        Linkedin: https://www.linkedin.com/in/med-ali-ouachani/
+        Linkedin: https://www.linkedin.com/in/med-ali-wachani/
         Twitter: https://twitter.com/Ir0nbyte
         Github: https://github.com/IR0NBYTE
     # Links: 
