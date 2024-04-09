@@ -2,6 +2,8 @@
 title: 
 date: 2022-09-13 18:08:49
 ---
+![](https://drive.google.com/file/d/1-9UInw6hV-8RJuzVelClprsQSiSbLGvz/view?usp=sharing)
+
 
 ### I - Biographie
 My name is Mohamed Ali Ouachani, and my friends call me *IronByte*. I've been programming since high school and have gained considerable experience in areas such as algorithms, data structures, Linux, and networks. I enjoy participating in competitive programming contests and CTFs, and I'm comfortable with all things software-related.

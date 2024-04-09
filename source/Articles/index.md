@@ -17,6 +17,7 @@ date: 2022-10-13 12:20:33
 * [Reverse Engineering 101 - Execution of a program (High Level Perspective)](https://www.youtube.com/watch?v=CkBv0FkOxys&t=936s)
 * [Reverse Engineering 101 - ELF (Executable Linkable Format)](https://www.youtube.com/watch?v=U12XlEBRSyM)
 * [Reverse Engineering 101 - Paging](https://www.youtube.com/watch?v=g3uOE11xby8)
+* [Reverse Engineering 101 - GDB](https://www.youtube.com/watch?v=1iptoUKXrcI)
 
 ### Android
 * [Reverse Engineering Android ~ Chapter 1: Android Fundamentals](../Android-REV_1/)
