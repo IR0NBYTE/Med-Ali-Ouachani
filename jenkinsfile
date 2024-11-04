@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    DOCKERHUB_REPO = 'ir0nbyte/front_website'  // Replace with your DockerHub repository path
+    DOCKERHUB_REPO = 'ir0nbyte/front_website'  
   }
 
   stages {
@@ -23,12 +23,11 @@ pipeline {
 
     stage('Push Docker Image to Docker Hub') {
       steps {
-        // Login to Docker Hub and push the image
+       
         withCredentials([usernamePassword(credentialsId: 'dockerHub', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')]) {
           sh 'docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD'
         }
         
-        // Push the Docker image to Docker Hub
         sh "docker push ${DOCKERHUB_REPO}:latest"
       }
     }
